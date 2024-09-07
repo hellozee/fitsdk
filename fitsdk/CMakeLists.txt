@@ -1,0 +1,337 @@
+set(FITSDK_HEADERS
+    fit_aad_accel_features_mesg.hpp
+    fit_aad_accel_features_mesg_listener.hpp
+    fit_accelerometer_data_mesg.hpp
+    fit_accelerometer_data_mesg_listener.hpp
+    fit_accumulated_field.hpp
+    fit_accumulator.hpp
+    fit_activity_mesg.hpp
+    fit_activity_mesg_listener.hpp
+    fit_ant_channel_id_mesg.hpp
+    fit_ant_channel_id_mesg_listener.hpp
+    fit_ant_rx_mesg.hpp
+    fit_ant_rx_mesg_listener.hpp
+    fit_ant_tx_mesg.hpp
+    fit_ant_tx_mesg_listener.hpp
+    fit_aviation_attitude_mesg.hpp
+    fit_aviation_attitude_mesg_listener.hpp
+    fit_barometer_data_mesg.hpp
+    fit_barometer_data_mesg_listener.hpp
+    fit_beat_intervals_mesg.hpp
+    fit_beat_intervals_mesg_listener.hpp
+    fit_bike_profile_mesg.hpp
+    fit_bike_profile_mesg_listener.hpp
+    fit_blood_pressure_mesg.hpp
+    fit_blood_pressure_mesg_listener.hpp
+    fit_buffered_mesg_broadcaster.hpp
+    fit_buffered_record_mesg_broadcaster.hpp
+    fit_buffered_record_mesg.hpp
+    fit_buffered_record_mesg_listener.hpp
+    fit_buffer_encode.hpp
+    fit_cadence_zone_mesg.hpp
+    fit_cadence_zone_mesg_listener.hpp
+    fit_camera_event_mesg.hpp
+    fit_camera_event_mesg_listener.hpp
+    fit_capabilities_mesg.hpp
+    fit_capabilities_mesg_listener.hpp
+    fit_chrono_shot_data_mesg.hpp
+    fit_chrono_shot_data_mesg_listener.hpp
+    fit_chrono_shot_session_mesg.hpp
+    fit_chrono_shot_session_mesg_listener.hpp
+    fit_climb_pro_mesg.hpp
+    fit_climb_pro_mesg_listener.hpp
+    fit_config.hpp
+    fit_connectivity_mesg.hpp
+    fit_connectivity_mesg_listener.hpp
+    fit_course_mesg.hpp
+    fit_course_mesg_listener.hpp
+    fit_course_point_mesg.hpp
+    fit_course_point_mesg_listener.hpp
+    fit_crc.hpp
+    fit_date_time.hpp
+    fit_decode.hpp
+    fit_developer_data_id_mesg.hpp
+    fit_developer_data_id_mesg_listener.hpp
+    fit_developer_field_definition.hpp
+    fit_developer_field_description.hpp
+    fit_developer_field_description_listener.hpp
+    fit_developer_field.hpp
+    fit_device_aux_battery_info_mesg.hpp
+    fit_device_aux_battery_info_mesg_listener.hpp
+    fit_device_info_mesg.hpp
+    fit_device_info_mesg_listener.hpp
+    fit_device_settings_mesg.hpp
+    fit_device_settings_mesg_listener.hpp
+    fit_dive_alarm_mesg.hpp
+    fit_dive_alarm_mesg_listener.hpp
+    fit_dive_apnea_alarm_mesg.hpp
+    fit_dive_apnea_alarm_mesg_listener.hpp
+    fit_dive_gas_mesg.hpp
+    fit_dive_gas_mesg_listener.hpp
+    fit_dive_settings_mesg.hpp
+    fit_dive_settings_mesg_listener.hpp
+    fit_dive_summary_mesg.hpp
+    fit_dive_summary_mesg_listener.hpp
+    fit_encode.hpp
+    fit_event_mesg.hpp
+    fit_event_mesg_listener.hpp
+    fit_exd_data_concept_configuration_mesg.hpp
+    fit_exd_data_concept_configuration_mesg_listener.hpp
+    fit_exd_data_field_configuration_mesg.hpp
+    fit_exd_data_field_configuration_mesg_listener.hpp
+    fit_exd_screen_configuration_mesg.hpp
+    fit_exd_screen_configuration_mesg_listener.hpp
+    fit_exercise_title_mesg.hpp
+    fit_exercise_title_mesg_listener.hpp
+    fit_factory.hpp
+    fit_field_base.hpp
+    fit_field_capabilities_mesg.hpp
+    fit_field_capabilities_mesg_listener.hpp
+    fit_field_definition.hpp
+    fit_field_description_mesg.hpp
+    fit_field_description_mesg_listener.hpp
+    fit_field.hpp
+    fit_file_capabilities_mesg.hpp
+    fit_file_capabilities_mesg_listener.hpp
+    fit_file_creator_mesg.hpp
+    fit_file_creator_mesg_listener.hpp
+    fit_file_id_mesg.hpp
+    fit_file_id_mesg_listener.hpp
+    fit_goal_mesg.hpp
+    fit_goal_mesg_listener.hpp
+    fit_gps_metadata_mesg.hpp
+    fit_gps_metadata_mesg_listener.hpp
+    fit_gyroscope_data_mesg.hpp
+    fit_gyroscope_data_mesg_listener.hpp
+    fit.hpp
+    fit_hr_mesg.hpp
+    fit_hr_mesg_listener.hpp
+    fit_hrm_profile_mesg.hpp
+    fit_hrm_profile_mesg_listener.hpp
+    fit_hrv_mesg.hpp
+    fit_hrv_mesg_listener.hpp
+    fit_hrv_status_summary_mesg.hpp
+    fit_hrv_status_summary_mesg_listener.hpp
+    fit_hrv_value_mesg.hpp
+    fit_hrv_value_mesg_listener.hpp
+    fit_hr_zone_mesg.hpp
+    fit_hr_zone_mesg_listener.hpp
+    fit_hsa_accelerometer_data_mesg.hpp
+    fit_hsa_accelerometer_data_mesg_listener.hpp
+    fit_hsa_body_battery_data_mesg.hpp
+    fit_hsa_body_battery_data_mesg_listener.hpp
+    fit_hsa_configuration_data_mesg.hpp
+    fit_hsa_configuration_data_mesg_listener.hpp
+    fit_hsa_event_mesg.hpp
+    fit_hsa_event_mesg_listener.hpp
+    fit_hsa_gyroscope_data_mesg.hpp
+    fit_hsa_gyroscope_data_mesg_listener.hpp
+    fit_hsa_heart_rate_data_mesg.hpp
+    fit_hsa_heart_rate_data_mesg_listener.hpp
+    fit_hsa_respiration_data_mesg.hpp
+    fit_hsa_respiration_data_mesg_listener.hpp
+    fit_hsa_spo2_data_mesg.hpp
+    fit_hsa_spo2_data_mesg_listener.hpp
+    fit_hsa_step_data_mesg.hpp
+    fit_hsa_step_data_mesg_listener.hpp
+    fit_hsa_stress_data_mesg.hpp
+    fit_hsa_stress_data_mesg_listener.hpp
+    fit_hsa_wrist_temperature_data_mesg.hpp
+    fit_hsa_wrist_temperature_data_mesg_listener.hpp
+    fit_jump_mesg.hpp
+    fit_jump_mesg_listener.hpp
+    fit_lap_mesg.hpp
+    fit_lap_mesg_listener.hpp
+    fit_length_mesg.hpp
+    fit_length_mesg_listener.hpp
+    fit_magnetometer_data_mesg.hpp
+    fit_magnetometer_data_mesg_listener.hpp
+    fit_max_met_data_mesg.hpp
+    fit_max_met_data_mesg_listener.hpp
+    fit_memo_glob_mesg.hpp
+    fit_memo_glob_mesg_listener.hpp
+    fit_mesg_broadcaster.hpp
+    fit_mesg_broadcast_plugin.hpp
+    fit_mesg_capabilities_mesg.hpp
+    fit_mesg_capabilities_mesg_listener.hpp
+    fit_mesg_definition.hpp
+    fit_mesg_definition_listener.hpp
+    fit_mesg.hpp
+    fit_mesg_listener.hpp
+    fit_mesg_with_event_broadcaster.hpp
+    fit_mesg_with_event.hpp
+    fit_mesg_with_event_listener.hpp
+    fit_met_zone_mesg.hpp
+    fit_met_zone_mesg_listener.hpp
+    fit_monitoring_hr_data_mesg.hpp
+    fit_monitoring_hr_data_mesg_listener.hpp
+    fit_monitoring_info_mesg.hpp
+    fit_monitoring_info_mesg_listener.hpp
+    fit_monitoring_mesg.hpp
+    fit_monitoring_mesg_listener.hpp
+    fit_nmea_sentence_mesg.hpp
+    fit_nmea_sentence_mesg_listener.hpp
+    fit_obdii_data_mesg.hpp
+    fit_obdii_data_mesg_listener.hpp
+    fit_ohr_settings_mesg.hpp
+    fit_ohr_settings_mesg_listener.hpp
+    fit_one_d_sensor_calibration_mesg.hpp
+    fit_one_d_sensor_calibration_mesg_listener.hpp
+    fit_pad_mesg.hpp
+    fit_pad_mesg_listener.hpp
+    fit_power_zone_mesg.hpp
+    fit_power_zone_mesg_listener.hpp
+    fit_profile.hpp
+    fit_protocol_validator.hpp
+    fit_raw_bbi_mesg.hpp
+    fit_raw_bbi_mesg_listener.hpp
+    fit_record_mesg.hpp
+    fit_record_mesg_listener.hpp
+    fit_respiration_rate_mesg.hpp
+    fit_respiration_rate_mesg_listener.hpp
+    fit_runtime_exception.hpp
+    fit_schedule_mesg.hpp
+    fit_schedule_mesg_listener.hpp
+    fit_sdm_profile_mesg.hpp
+    fit_sdm_profile_mesg_listener.hpp
+    fit_segment_file_mesg.hpp
+    fit_segment_file_mesg_listener.hpp
+    fit_segment_id_mesg.hpp
+    fit_segment_id_mesg_listener.hpp
+    fit_segment_lap_mesg.hpp
+    fit_segment_lap_mesg_listener.hpp
+    fit_segment_leaderboard_entry_mesg.hpp
+    fit_segment_leaderboard_entry_mesg_listener.hpp
+    fit_segment_point_mesg.hpp
+    fit_segment_point_mesg_listener.hpp
+    fit_session_mesg.hpp
+    fit_session_mesg_listener.hpp
+    fit_set_mesg.hpp
+    fit_set_mesg_listener.hpp
+    fit_skin_temp_overnight_mesg.hpp
+    fit_skin_temp_overnight_mesg_listener.hpp
+    fit_slave_device_mesg.hpp
+    fit_slave_device_mesg_listener.hpp
+    fit_sleep_assessment_mesg.hpp
+    fit_sleep_assessment_mesg_listener.hpp
+    fit_sleep_level_mesg.hpp
+    fit_sleep_level_mesg_listener.hpp
+    fit_software_mesg.hpp
+    fit_software_mesg_listener.hpp
+    fit_speed_zone_mesg.hpp
+    fit_speed_zone_mesg_listener.hpp
+    fit_split_mesg.hpp
+    fit_split_mesg_listener.hpp
+    fit_split_summary_mesg.hpp
+    fit_split_summary_mesg_listener.hpp
+    fit_spo2_data_mesg.hpp
+    fit_spo2_data_mesg_listener.hpp
+    fit_sport_mesg.hpp
+    fit_sport_mesg_listener.hpp
+    fit_stress_level_mesg.hpp
+    fit_stress_level_mesg_listener.hpp
+    fit_tank_summary_mesg.hpp
+    fit_tank_summary_mesg_listener.hpp
+    fit_tank_update_mesg.hpp
+    fit_tank_update_mesg_listener.hpp
+    fit_three_d_sensor_calibration_mesg.hpp
+    fit_three_d_sensor_calibration_mesg_listener.hpp
+    fit_time_in_zone_mesg.hpp
+    fit_time_in_zone_mesg_listener.hpp
+    fit_timestamp_correlation_mesg.hpp
+    fit_timestamp_correlation_mesg_listener.hpp
+    fit_totals_mesg.hpp
+    fit_totals_mesg_listener.hpp
+    fit_training_file_mesg.hpp
+    fit_training_file_mesg_listener.hpp
+    fit_unicode.hpp
+    fit_user_profile_mesg.hpp
+    fit_user_profile_mesg_listener.hpp
+    fit_video_clip_mesg.hpp
+    fit_video_clip_mesg_listener.hpp
+    fit_video_description_mesg.hpp
+    fit_video_description_mesg_listener.hpp
+    fit_video_frame_mesg.hpp
+    fit_video_frame_mesg_listener.hpp
+    fit_video_mesg.hpp
+    fit_video_mesg_listener.hpp
+    fit_video_title_mesg.hpp
+    fit_video_title_mesg_listener.hpp
+    fit_watchface_settings_mesg.hpp
+    fit_watchface_settings_mesg_listener.hpp
+    fit_weather_alert_mesg.hpp
+    fit_weather_alert_mesg_listener.hpp
+    fit_weather_conditions_mesg.hpp
+    fit_weather_conditions_mesg_listener.hpp
+    fit_weight_scale_mesg.hpp
+    fit_weight_scale_mesg_listener.hpp
+    fit_workout_mesg.hpp
+    fit_workout_mesg_listener.hpp
+    fit_workout_session_mesg.hpp
+    fit_workout_session_mesg_listener.hpp
+    fit_workout_step_mesg.hpp
+    fit_workout_step_mesg_listener.hpp
+    fit_zones_target_mesg.hpp
+    fit_zones_target_mesg_listener.hpp
+)
+
+set(FITSDK_SOURCES
+    fit_accumulated_field.cpp
+    fit_accumulator.cpp
+    fit_buffered_mesg_broadcaster.cpp
+    fit_buffered_record_mesg_broadcaster.cpp
+    fit_buffer_encode.cpp
+    fit.cpp
+    fit_crc.cpp
+    fit_date_time.cpp
+    fit_decode.cpp
+    fit_developer_field.cpp
+    fit_developer_field_definition.cpp
+    fit_developer_field_description.cpp
+    fit_encode.cpp
+    fit_factory.cpp
+    fit_field_base.cpp
+    fit_field.cpp
+    fit_field_definition.cpp
+    fit_mesg_broadcaster.cpp
+    fit_mesg.cpp
+    fit_mesg_definition.cpp
+    fit_mesg_with_event_broadcaster.cpp
+    fit_profile.cpp
+    fit_protocol_validator.cpp
+    fit_unicode.cpp
+)
+
+add_library(fitsdk 
+STATIC
+    ${FITSDK_HEADERS}
+    ${FITSDK_SOURCES}
+)
+
+set_target_properties(fitsdk PROPERTIES PUBLIC_HEADER "${FITSDK_HEADERS}")
+
+INSTALL(
+    TARGETS fitsdk 
+    EXPORT fitsdk_exports
+    LIBRARY DESTINATION lib
+    PUBLIC_HEADER DESTINATION include/fitsdk
+)
+
+install(
+    EXPORT fitsdk_exports
+    FILE fitsdkTargets.cmake
+    NAMESPACE fitsdk::
+    DESTINATION lib/cmake/fitsdk
+)
+
+include(CMakePackageConfigHelpers)
+write_basic_package_version_file(
+    "fitsdkConfigVersion.cmake"
+    VERSION ${VERSION}
+    COMPATIBILITY AnyNewerVersion
+)
+
+install(
+    FILES "${PROJECT_SOURCE_DIR}/cmake/fitsdkConfig.cmake" "${CMAKE_CURRENT_BINARY_DIR}/fitsdkConfigVersion.cmake"
+    DESTINATION lib/cmake/fitsdk
+)
